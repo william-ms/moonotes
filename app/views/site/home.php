@@ -4,10 +4,15 @@
   <link rel="stylesheet" href="<?php echo CSS_PATH; ?>home.css" />
 <?=$this->section_end() ?>
 
-<?=$this->section_start('scripts') ?>
-  <script src="<?php echo JS_PATH; ?>home.js"></script>
-<?=$this->section_end() ?>
-
 <div class="home">
-  <h2>Site Home</h2>
+  <div class="home-list">
+    <?=$this->partial('site.list'); ?>
+  </div>
+
+  <?=$this->component('site.button', [
+      'type' => 'link',
+      'href' => '/note/create',
+      'class' => 'btn-add',
+      'text' => '+'
+    ]); ?>
 </div>
