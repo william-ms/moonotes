@@ -12,10 +12,15 @@
   font-size: 24px;
   color: #ffffff;
   background-color: #444444;
+  cursor: pointer;
+}
+.sidebar-button button:hover {
+  background-color: #666666;
 }
 
 /*============================== SIDEBAR CONTENT =============================*/
 .sidebar-content {
+  display: none;
   width: 400px;
   padding: 2%;
 }
@@ -38,6 +43,19 @@
   height: 100%;
 }
 
+.perfil-name {
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+  padding: 0 20px 0 10px;
+}
+
+.perfil-logout a {
+  line-height: 40px;
+  font-size: 18px;
+  color: #888888;
+}
+
 .login a {
   padding: 0 10px;
   line-height: 40px;
@@ -53,7 +71,7 @@
 }
 
 .signup {
-  color: #444444;
+  color: #888888;
 }
 
 /*============================== SIDEBAR TITLE ===============================*/
@@ -63,7 +81,6 @@
 }
 
 /*=============================== SIDEBAR LIST ===============================*/
-
 .sidebar-list ul {
   list-style-type: none;
 }
@@ -77,6 +94,7 @@
   background-color: #222222;
   border: none;
   border-bottom: 1px solid #ffffff;
+  cursor: pointer;
 }
   .sidebar-list ul li button:hover {
     background-color: #444;
@@ -107,4 +125,8 @@
   color: #ffffff;
   background-color: #222222;
   border: none;
+  cursor: pointer;
 }
+  .sidebar-add button:hover {
+    background-color: #444444;
+  }

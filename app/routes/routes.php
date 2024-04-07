@@ -2,8 +2,10 @@
 
 use app\library\routes\Route;
 use app\controllers\site\HomeController;
-use app\controllers\admin\HomeController as AdminHomeController;
+use app\controllers\site\LoginController;
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/admin', [AdminHomeController::class, 'index'])->name('admin.home');
-// Route::get('/user/[a-z0-9]+/name/[a-z]+', [UserController::class, 'index'])->name('user');
+Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/login', [LoginController::class, 'index']);
+Route::post('/login/store', [LoginController::class, 'store']);
+Route::get('/login/destroy', [LoginController::class, 'destroy']);

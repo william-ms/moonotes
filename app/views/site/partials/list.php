@@ -5,30 +5,5 @@
 <div class="list">
   <ul>
     <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
-    <li><a href="/note">Note</a></li>
   </ul>
 </div>
