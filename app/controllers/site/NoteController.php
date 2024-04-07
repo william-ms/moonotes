@@ -29,6 +29,8 @@ class NoteController extends Controller
     $query = (new Query)->where('section_id', '=', $args['show']);
     $notes = (new NoteModel)->execute(new FindAll($query));
 
+    $list = '';
+
     if(!empty($notes))
     {
       session_set('notes', $notes);

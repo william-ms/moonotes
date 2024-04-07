@@ -5,6 +5,7 @@
 <?=$this->section_start('scripts') ?>
   <script src="<?php echo JS_PATH; ?>showSidebar.js"></script>
   <script src="<?php echo JS_PATH; ?>backSidebar.js"></script>
+  <script src="<?php echo JS_PATH; ?>addSection.js"></script>
   <script src="<?php echo JS_PATH; ?>getNotes.js"></script>
 <?=$this->section_end() ?>
 
@@ -45,7 +46,7 @@
           <ul>
             <?php foreach($sections as $section): ?>
               <li>
-                <button onclick="getNotes(this, <?php echo $section->id; ?>)">
+                <button onclick="getNotes(<?php echo $section->id; ?>)">
                   <?php echo $section->title ?>
                 </button>
               </li>
@@ -53,7 +54,7 @@
           </ul>
 
           <div class="sidebar-add">
-            <form method="POST" action="" id="form-section">
+            <form id="form-section">
               <input type="text" name="section-title" placeholder="Nova seção"/>
               <button onclick="addSection(event)">Adicionar</button>
             </form>

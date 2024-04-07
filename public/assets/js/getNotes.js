@@ -1,4 +1,4 @@
-function getNotes(el, id)
+function getNotes(id)
 {
   xmlHttpGet('/note/show', ()=>
   {
