@@ -22,12 +22,13 @@
 .sidebar-content {
   display: none;
   width: 400px;
-  padding: 2%;
+  overflow-x: hidden;
 }
 
-/*============================== SIDEBAR HAEADER =============================*/
+/*============================== SIDEBAR HEADER =============================*/
 .sidebar-header {
   display: flex;
+  padding: 2%;
 }
 
 .perfil-img {
@@ -76,11 +77,47 @@
 
 /*============================== SIDEBAR TITLE ===============================*/
 .sidebar-title {
-  padding: 20px 0 5px 0;
+  display: flex;
+  margin: 20px 0 5px 0;
+  border-bottom: 2px solid #444444;
+}
+
+.sidebar-title h2 {
+  line-height: 40px;
   color: #ffffff;
 }
 
-/*=============================== SIDEBAR LIST ===============================*/
+.sidebar-title button {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #222222;
+  cursor: pointer;
+}
+  .sidebar-title button:hover {
+    background-color: #444444;
+  }
+
+/*=============================== SIDEBAR SECTIONS ===============================*/
+.sidebar-list {
+  display: flex;
+  width: 200%;
+}
+
+.sidebar-sections {
+  position: relative;
+  width: 400px;
+  padding: 0 2%;
+}
+
+.sidebar-notes {
+  position: relative;
+  width: 400px;
+  padding: 0 2%;
+}
+
 .sidebar-list ul {
   list-style-type: none;
 }

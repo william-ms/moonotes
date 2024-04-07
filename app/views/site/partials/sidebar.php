@@ -4,6 +4,7 @@
 
 <?=$this->section_start('scripts') ?>
   <script src="<?php echo JS_PATH; ?>showSidebar.js"></script>
+  <script src="<?php echo JS_PATH; ?>backSidebar.js"></script>
   <script src="<?php echo JS_PATH; ?>getNotes.js"></script>
 <?=$this->section_end() ?>
 
@@ -34,22 +35,32 @@
           <a href="/login/destroy">sair</a>
         </div>
       </div>
-    
-      <div class="sidebar-title">
-        <h2>Minhas seções</h2>
-      </div>
 
       <div class="sidebar-list">
-        <ul>
-          <li><button href="/section/1">Receitas</button></li>
-        </ul>
+        <div class="sidebar-sections">
+          <div class="sidebar-title">
+            <h2>Minhas seções</h2>
+          </div>
 
-        <div class="sidebar-add">
-          <form method="POST" action="" id="form-section">
-            <input type="text" name="section-title" placeholder="Nova seção"/>
-            <button onclick="addSection(event)">Adicionar</button>
-          </form>
+          <ul>
+            <?php foreach($sections as $section): ?>
+              <li>
+                <button onclick="getNotes(this, <?php echo $section->id; ?>)">
+                  <?php echo $section->title ?>
+                </button>
+              </li>
+            <?php endforeach; ?>
+          </ul>
+
+          <div class="sidebar-add">
+            <form method="POST" action="" id="form-section">
+              <input type="text" name="section-title" placeholder="Nova seção"/>
+              <button onclick="addSection(event)">Adicionar</button>
+            </form>
+          </div>
         </div>
+
+        <div class="sidebar-notes"></div>
       </div>
     <?php endif; ?>
   </div>
