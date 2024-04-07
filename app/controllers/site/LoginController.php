@@ -57,6 +57,6 @@ class LoginController extends Controller
       session_remove('user');
     }
 
-    redirect('/');
+    redirect('/login');
   }
 }

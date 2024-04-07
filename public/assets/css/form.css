@@ -20,16 +20,13 @@ form {
 }
 
 .form-button {
+  margin: 20px 0;
   text-align: center;
 }
 
 .btn-form {
   padding: 10px 20px;
   font-size: 18px;
-}
-
-.change {
-  margin-top: 50px;
 }
 
 .change p {
